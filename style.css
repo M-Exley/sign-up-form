@@ -1,0 +1,61 @@
+body {
+    background-image: url('./trees.jpg');
+    background-size: min(1500px, 100%);
+    background-position: top;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 10px;
+    position: fixed;
+    left: -7px;
+    top: 10px;
+    opacity: 80%;
+    transform: translateY(100px);
+    width: 70%;
+    height: max(450px, 50%);
+    border: 2px black solid;
+    background-color: aliceblue;
+    border-radius: 7px;
+
+}
+
+.container .info {
+    text-align: left;
+    font-family: inherit;
+    padding: 2px;
+    width: calc(300px + 10rem);
+    border: .2px solid firebrick;
+    height: 200px;
+    text-transform:capitalize;
+    font-family: inherit;
+    
+}
+
+.info::first-line {
+    font-weight: bold;
+}
+
+input {
+    max-width: 250px;
+}
+
+
+
+span {
+    text-decoration: underline;
+    color: blue;
+    font-family: inherit;
+}
