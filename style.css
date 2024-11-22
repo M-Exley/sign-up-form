@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     background-image: url('./trees.jpg');
     background-size: min(1500px, 100%);
@@ -6,12 +8,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     /* overflow-x: hidden; */
+    font-family: "Open Sans", sans-serif;
 }
 
 
 .container {
+    font-family: "Open Sans";
+    font-size: small;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -34,19 +39,19 @@ body {
 
 .container .info {
     text-align: left;
-    font-family: inherit;
     padding: 2px;
     width: calc(300px + 10rem);
-    border: .2px solid firebrick;
-    height: 200px;
-    text-transform:capitalize;
+    border: .8px solid darkorange;
+    height:min-content;
     font-family: inherit;
-    
+    font-size: large;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px 2px grey;
+    text-wrap:balance;
+    overflow-wrap: normal;
 }
 
-.info::first-line {
-    font-weight: bold;
-}
+
 
 input {
     max-width: 250px;
@@ -56,6 +61,54 @@ input {
 
 span {
     text-decoration: underline;
-    color: blue;
+    color: darkorange;
     font-family: inherit;
+    cursor: pointer;
+    padding-right: 2px;
+}
+
+input[for="email"]:invalid {
+    border-color: red;
+} 
+input[for="password"]:invalid {
+    border-color: red;
+}
+
+input[for="password"]:valid {
+    border-color: green;
+}
+
+button {
+    font-family: inherit;
+    background-color: darkorange;
+    border-radius: 4px;
+    box-shadow: 1px 1px grey;
+    
+}
+
+.header {
+    background-color: darkorange;
+    opacity: 75%;
+    width: 110%;
+    text-align: right;
+    position: fixed;
+    font-style: italic;
+    top: 0px;
+    right: -7px;
+    padding-right: 15px;
+    font-family: "Open Sans";
+    font-size: xx-large;
+    font-weight: 900;
+}
+.footer {
+    position: fixed;
+    bottom: 1px;
+    left: 2px;
+    font-family: inherit;
+    font-size:x-small;
+}
+
+svg:hover,
+button:hover {
+    cursor: pointer;
 }
